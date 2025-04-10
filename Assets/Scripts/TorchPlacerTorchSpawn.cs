@@ -4,7 +4,8 @@ public class TorchPlacerTorchSpawn : MonoBehaviour, IInteractable
 {
     public GameObject torch;
     public int torchCode = 0;
-    public int thisTorchVal = 0;
+    public int thisTorchVal = 1;
+    public int nottorchval = 0;
 
     public void Start()
     {
@@ -14,7 +15,14 @@ public class TorchPlacerTorchSpawn : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown("e"))
         {
-            torchCode = thisTorchVal;
+            if (torchCode == thisTorchVal)
+            {
+                torchCode -= 1;
+            }
+            if (torchCode != thisTorchVal)
+            {
+                torchCode += 1;
+            }
         }
         if (torchCode == thisTorchVal)
         {
