@@ -1,8 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TorchPlacerTorchSpawn : MonoBehaviour, IInteractable
 {
     public GameObject torch;
+    
     public int torchCode = 0;
     public int thisTorchVal = 1;
     public int nottorchval = 0;
@@ -17,11 +19,11 @@ public class TorchPlacerTorchSpawn : MonoBehaviour, IInteractable
         {
             if (torchCode == thisTorchVal)
             {
-                torchCode -= 1;
+                torchCode = 0;
             }
-            if (torchCode != thisTorchVal)
+            else if (torchCode != thisTorchVal)
             {
-                torchCode += 1;
+                torchCode = thisTorchVal;
             }
         }
         if (torchCode == thisTorchVal)
