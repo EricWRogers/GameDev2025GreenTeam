@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3283702782794712719}
   - component: {fileID: 3378510697961631713}
   - component: {fileID: 5939927097113744694}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 9213943843850347838}
   - component: {fileID: 5249872217971716842}
   - component: {fileID: 1709377899415460088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 3412112117193205369}
   - component: {fileID: 819511709965657598}
   - component: {fileID: 1508297145552869385}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TorchPlaceholder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,9 +328,9 @@ GameObject:
   - component: {fileID: 3068111881190805869}
   - component: {fileID: 3964371367422973672}
   - component: {fileID: 2457738792527022783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 1271214383865175224}
   - component: {fileID: 3511181469806311214}
   - component: {fileID: 3044203673275016639}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 7711068996568722023}
   - component: {fileID: 7807910947128108443}
   - component: {fileID: 1965461422932650845}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 1109230958210337120}
   - component: {fileID: 8723101863834075102}
   - component: {fileID: 3787626724559331531}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -878,7 +878,7 @@ GameObject:
   - component: {fileID: 2049592366812610541}
   - component: {fileID: 6443745911368431825}
   - component: {fileID: 8618790665527171685}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
