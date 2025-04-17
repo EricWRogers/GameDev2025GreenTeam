@@ -5,7 +5,6 @@ public class TorchPlacerTorchSpawn : MonoBehaviour, IInteractable
 {
     public GameObject torch;
     public GameObject held_torch;
-    public int torchCode = 0;
     public int thisTorchVal = 1;
     public int otherTorchval = 0;
 
@@ -17,26 +16,26 @@ public class TorchPlacerTorchSpawn : MonoBehaviour, IInteractable
     {
         if (Input.GetKeyDown("e"))
         {
-            if (torchCode == thisTorchVal && torch.activeSelf == true)
+            if (GlobalVarsSetup.torchCode == thisTorchVal && torch.activeSelf == true)
             {
-                torchCode = otherTorchval;
+                GlobalVarsSetup.torchCode = otherTorchval;
             }
-            else if (torchCode != thisTorchVal && held_torch.activeSelf == true)
+            else if (GlobalVarsSetup.torchCode != thisTorchVal && held_torch.activeSelf == true)
             {
-                torchCode = thisTorchVal;
+                GlobalVarsSetup.torchCode = thisTorchVal;
             }
 
             if (torch.activeSelf == false && held_torch.activeSelf == false)
             {
-                torchCode = 4;
+                GlobalVarsSetup.torchCode = 4;
             }
         
-            if (torchCode == thisTorchVal)
+            if (GlobalVarsSetup.torchCode == thisTorchVal)
             {
                 torch.SetActive(true);
                 held_torch.SetActive(false);
             }
-            else if (torchCode == otherTorchval)
+            else if (GlobalVarsSetup.torchCode == otherTorchval)
             {
                 torch.SetActive(false);
                 held_torch.SetActive(true);
