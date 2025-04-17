@@ -3,7 +3,6 @@ using TMPro;
 
 public class StickyFingers : MonoBehaviour
 {
-    public int gold = 0;
     public TMP_Text scoreText;
     public TMP_Text winText;
 
@@ -11,10 +10,9 @@ public class StickyFingers : MonoBehaviour
     {
         if (collision.tag == "Pickup") {
             collision.gameObject.SetActive(false);
-            gold += collision.gameObject.GetComponent<Pickup>().amount;
-            scoreText.text = "Score: " + gold;
+            scoreText.text = "Score: " + GlobalVarsSetup.coincount;
 
-                winText.gameObject.SetActive(gold > 119);
+                winText.gameObject.SetActive(GlobalVarsSetup.coincount > 119);
 
             //gold++;
             // gold += 1;
