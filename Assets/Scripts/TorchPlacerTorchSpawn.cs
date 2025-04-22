@@ -27,10 +27,10 @@ public class TorchPlacerTorchSpawn : MonoBehaviour, IInteractable
 
             if (torch.activeSelf == false && held_torch.activeSelf == false)
             {
-                GlobalVarsSetup.torchCode = 4;
+                torch.SetActive(false);
+                held_torch.SetActive(false);
             }
-        
-            if (GlobalVarsSetup.torchCode == thisTorchVal)
+            else if (GlobalVarsSetup.torchCode == thisTorchVal)
             {
                 torch.SetActive(true);
                 held_torch.SetActive(false);
