@@ -17,6 +17,12 @@ public class DoorMover : MonoBehaviour
     private bool door1Moving = false;
     private bool door2Moving = false;
 
+    public bool lightactive = false;
+    public bool coinactive = false;
+
+    public int lightcode = 9999;
+    public int coincode = 999999999;
+
     void Start()
     {
         if (door1 != null)
@@ -35,6 +41,14 @@ public class DoorMover : MonoBehaviour
         if (door2Moving && door2 != null)
         {
             MoveDoor(door2, door2StartPos, door2Direction);
+        }
+        if (lightactive == true && GlobalVarsSetup.torchCode == lightcode)
+        {
+            MoveDoor(door1, door1StartPos, door1Direction);
+        }
+        if (coinactive == true && GlobalVarsSetup.coincount >= coincode)
+        {
+            MoveDoor(door1, door1StartPos, door1Direction);
         }
     }
 
