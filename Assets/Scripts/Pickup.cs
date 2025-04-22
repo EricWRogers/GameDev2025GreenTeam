@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
+public class Pickup : MonoBehaviour, IInteractable
 {
     public int value = 1;
     public void DoSomething()
