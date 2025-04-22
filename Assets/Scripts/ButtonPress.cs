@@ -13,7 +13,7 @@ public class ButtonPress : MonoBehaviour, IInteractable
     private Vector3 pressedPosition;
     private bool isPressed = false;
     private bool isLookingAt = false;
-    private bool hasActivatedDoors = false; // So doors only open once
+    private bool hasActivated = false; // So doors only open once
 
     void Start()
     {
@@ -54,12 +54,12 @@ public class ButtonPress : MonoBehaviour, IInteractable
     {
         isPressed = true;
 
-        if (correctButton && !hasActivatedDoors)
+        if (correctButton && !hasActivated)
         {
             if (doorMover != null)
             {
                 doorMover.OpenDoors();
-                hasActivatedDoors = true;
+                hasActivated = true;
             }
             else
             {
