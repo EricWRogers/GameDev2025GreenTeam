@@ -11,7 +11,7 @@ public class DoorMover : MonoBehaviour
     public float moveDistance = 3f;
     public float moveSpeed = 2f;
 
-    private Vector3 door1StartPos;
+    public Vector3 door1StartPos = Vector3.up;
     private Vector3 door2StartPos;
 
     private bool door1Moving = false;
@@ -19,9 +19,11 @@ public class DoorMover : MonoBehaviour
 
     public bool lightactive = false;
     public bool coinactive = false;
+    public bool returns = false;
 
     public int lightcode = 9999;
     public int coincode = 999999999;
+    private int moved = 0;
 
     void Start()
     {
@@ -45,10 +47,19 @@ public class DoorMover : MonoBehaviour
         if (lightactive == true && GlobalVarsSetup.torchCode == lightcode)
         {
             MoveDoor(door1, door1StartPos, door1Direction);
+            moved = 1;
         }
         if (coinactive == true && GlobalVarsSetup.coincount >= coincode)
         {
             MoveDoor(door1, door1StartPos, door1Direction);
+        }
+        if (returns == true && lightactive == true && lightcode != GlobalVarsSetup.torchCode && door1StartPos != door1.transform.position && moved != 0)
+        {
+            MoveDoorBack(door1, door1StartPos, door1Direction);
+        }
+        if (door1.transform.position == door1StartPos)
+        {
+            moved = 0;
         }
     }
 
@@ -56,6 +67,10 @@ public class DoorMover : MonoBehaviour
     {
         Vector3 targetPos = startPos + direction.normalized * moveDistance;
         door.transform.position = Vector3.MoveTowards(door.transform.position, targetPos, moveSpeed * Time.deltaTime);
+    }
+    private void MoveDoorBack(GameObject door, Vector3 startPos, Vector3 direction)
+    {
+        door.transform.position = Vector3.MoveTowards(door.transform.position, door1StartPos, moveSpeed * Time.deltaTime);
     }
 
     public void OpenDoors()
