@@ -14,11 +14,11 @@ public class fog_script : MonoBehaviour
     {
         if (torch.activeSelf == true)
         {
-            RenderSettings.fogDensity = 0.1f;
+            RenderSettings.fogDensity = 0.2f;
         }
         else if (torch.activeSelf == false)
         {
-            RenderSettings.fogDensity = 0.2f;
+            RenderSettings.fogDensity = 0.3f;
         }
 
     }
