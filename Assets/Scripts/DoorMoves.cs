@@ -24,6 +24,8 @@ public class DoorMover : MonoBehaviour
     public int lightcode = 9999;
     public int coincode = 999999999;
     private int moved = 0;
+    public AudioClip doorSound;
+
 
     void Start()
     {
@@ -67,10 +69,12 @@ public class DoorMover : MonoBehaviour
     {
         Vector3 targetPos = startPos + direction.normalized * moveDistance;
         door.transform.position = Vector3.MoveTowards(door.transform.position, targetPos, moveSpeed * Time.deltaTime);
+        AudioSource.PlayClipAtPoint(doorSound, door.transform.position, 2f);
     }
     private void MoveDoorBack(GameObject door, Vector3 startPos, Vector3 direction)
     {
         door.transform.position = Vector3.MoveTowards(door.transform.position, door1StartPos, moveSpeed * Time.deltaTime);
+        AudioSource.PlayClipAtPoint(doorSound, door.transform.position, 2f);
     }
 
     public void OpenDoors()
