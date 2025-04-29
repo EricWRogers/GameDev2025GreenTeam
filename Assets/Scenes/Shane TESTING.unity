@@ -6098,6 +6098,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 901610054951243221, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 901610054951243221, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 901610054951243221, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 901610054951243221, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.53
+      objectReference: {fileID: 0}
     - target: {fileID: 2516041967655397826, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
       propertyPath: m_Name
       value: Player Capsule_Torch_Moveing_without_temp_torch
@@ -6112,6 +6128,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2744128361186702598, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
       propertyPath: walkingSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092952356694970456, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162448356033634, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+      propertyPath: m_Intensity
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8921700438760626823, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
@@ -6173,7 +6197,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2516041967655397826, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1728665940}
   m_SourcePrefab: {fileID: 100100000, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
 --- !u!1001 &626343348
 PrefabInstance:
@@ -7279,6 +7306,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8541749048852948606, guid: b5fae6b5787c4fc49a2b8c4f60192cdb, type: 3}
   m_PrefabInstance: {fileID: 1445437142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &714103486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8373029613507007158, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+  m_PrefabInstance: {fileID: 602470832}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &715194789
 PrefabInstance:
@@ -18928,6 +18960,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2712317989296370952, guid: 56a8b1e354eef1f4ebf6bfa1d1df19f3, type: 3}
   m_PrefabInstance: {fileID: 2095122576}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1728665931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2516041967655397826, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+  m_PrefabInstance: {fileID: 602470832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1728665940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728665931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b4457b28502b542b8bb6bdac392842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torch: {fileID: 714103486}
 --- !u!1001 &1731650269
 PrefabInstance:
   m_ObjectHideFlags: 0
