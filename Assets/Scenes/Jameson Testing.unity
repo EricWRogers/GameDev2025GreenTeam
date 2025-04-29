@@ -15460,8 +15460,10 @@ MonoBehaviour:
   door2Direction: {x: 0, y: 1, z: 0}
   moveDistance: 4
   moveSpeed: 2
+  door1StartPos: {x: 0, y: 1, z: 0}
   lightactive: 1
   coinactive: 0
+  returns: 0
   lightcode: 77
   coincode: 999999999
 --- !u!136 &1984594490
@@ -15896,10 +15898,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Capsule_Torch_Moveing_without_temp_torch
       objectReference: {fileID: 0}
-    - target: {fileID: 3092952356694970456, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
-      propertyPath: torch
-      value: 
-      objectReference: {fileID: 1424738989}
     - target: {fileID: 9108539297615309761, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -70.28
