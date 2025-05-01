@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -14,6 +16,12 @@ public class PlayerController : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
+    public AudioSource Source;
+    private float timer = 0;
+    private float Rando = 0;
+    public AudioClip step1;
+    public AudioClip step2;
+    public AudioClip step3;
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -62,6 +70,24 @@ public class PlayerController : MonoBehaviour
 
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
+        timer += (Time.deltaTime);
+        if ((Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")) && timer > .5)
+        {
+            Rando = Random.Range(0f, 2f);
+            if (Rando < .75f)
+            {
+                Source.PlayOneShot(step1);
+            }
+            else if (Rando > .75f && Rando < 1.50f)
+            {
+                Source.PlayOneShot(step2);
+            }
+            else
+            {
+                Source.PlayOneShot(step3);
+            }
+            timer = 0f;
+        }
 
         // Player and Camera rotation
         if (canMove)
