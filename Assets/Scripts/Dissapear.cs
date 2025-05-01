@@ -9,7 +9,7 @@ public class Dissapear : MonoBehaviour
     {
         if (GlobalVarsSetup.coincount >= disa)
         {
-            gameObject.active = false;
+            gameObject.SetActive(false);
         }
     }
 }
