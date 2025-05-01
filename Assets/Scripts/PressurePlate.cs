@@ -12,7 +12,7 @@ public class PressurePlate : MonoBehaviour
 
     [Header("Activation")]
     public bool correctPlate = false; // Is this the plate meant to trigger something?
-    public bool stayDownIfCorrect = false; // NEW: Should the plate stay down permanently if it's the correct one?
+    public bool stayDownIfCorrect = false; // Should the plate stay down permanently if it's the correct one?
     public DoorMover doorMover; // Reference to door mover
 
     private Vector3 originalPos; // Starting position of the plate visual
@@ -60,7 +60,7 @@ public class PressurePlate : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning($"[{name}] doorMover not assigned!");
+                    Debug.LogWarning($"[{name}] doorMover not assigned");
                 }
             }
         }
