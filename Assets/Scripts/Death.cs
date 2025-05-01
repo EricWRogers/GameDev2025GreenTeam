@@ -1,10 +1,14 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Death : MonoBehaviour
 {
-    public GameObject player;
-    private void OnTriggerEnter(Collider player)
+    private void OnTriggerEnter(Collider other)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Ded Screne");
+        if (other.tag == "Player")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Ded Screne");
+        }
+       
     }
 }
