@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5231305440348365312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.544464, y: 7.8031282, z: 6.8511963}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.14745764, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101,10 +101,13 @@ MonoBehaviour:
   door2Direction: {x: 0, y: 1, z: 0}
   moveDistance: 5
   moveSpeed: 5
+  door1StartPos: {x: 0, y: 1, z: 0}
   lightactive: 0
   coinactive: 0
+  returns: 0
   lightcode: 9999
   coincode: 999999999
+  doorSound: {fileID: 0}
 --- !u!1 &7582740969160910130
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,15 +163,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6058889989945582639, guid: 232c93b7f5333744d8867e32811dd1fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.518
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6058889989945582639, guid: 232c93b7f5333744d8867e32811dd1fa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.7306
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6058889989945582639, guid: 232c93b7f5333744d8867e32811dd1fa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.887
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6058889989945582639, guid: 232c93b7f5333744d8867e32811dd1fa, type: 3}
       propertyPath: m_LocalRotation.w
