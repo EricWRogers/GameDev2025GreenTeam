@@ -10,7 +10,7 @@ public class Pickup : MonoBehaviour, IInteractable
         {
             GlobalVarsSetup.coincount += value;
             AudioSource.PlayClipAtPoint(soundCollect, transform.position);
-            gameObject.active = false;
+            gameObject.SetActive(false);
         }
     }
 }
