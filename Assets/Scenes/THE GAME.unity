@@ -3561,7 +3561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &330585544
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8254,6 +8254,10 @@ PrefabInstance:
       propertyPath: door1
       value: 
       objectReference: {fileID: 2001085395}
+    - target: {fileID: 8668391124826842308, guid: 77985181094286b43a4c05e3b88244b6, type: 3}
+      propertyPath: doorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b01a7d9fb92933c4392553563ed56d72, type: 3}
     - target: {fileID: 8668391124826842308, guid: 77985181094286b43a4c05e3b88244b6, type: 3}
       propertyPath: moveDistance
       value: 4
