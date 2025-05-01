@@ -3046,7 +3046,7 @@ MonoBehaviour:
   returns: 0
   lightcode: 99
   coincode: 999999999
-  doorSound: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: b01a7d9fb92933c4392553563ed56d72, type: 3}
 --- !u!65 &1036855805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3309,7 +3309,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1552177220383521246, guid: 6b9d7e9282821874f86db1e1acbfb31b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1660854116}
+      addedObject: {fileID: 1660854109}
   m_SourcePrefab: {fileID: 100100000, guid: 6b9d7e9282821874f86db1e1acbfb31b, type: 3}
 --- !u!1001 &1194916751
 PrefabInstance:
@@ -4802,7 +4802,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1552177220383521246, guid: 6b9d7e9282821874f86db1e1acbfb31b, type: 3}
   m_PrefabInstance: {fileID: 1135623493}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1660854116
+--- !u!114 &1660854109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4811,10 +4811,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1660854107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0000930ee981bf14db916200d4b15bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: b8a293d9c6d513e4ab5ca00058a9a154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gold: {fileID: 1369990892}
+  scoreText: {fileID: 1369990892}
+  winText: {fileID: 0}
 --- !u!1 &1682275090
 GameObject:
   m_ObjectHideFlags: 0
