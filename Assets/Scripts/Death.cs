@@ -7,6 +7,8 @@ public class Death : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             UnityEngine.SceneManagement.SceneManager.LoadScene("Ded Screne");
         }
        
