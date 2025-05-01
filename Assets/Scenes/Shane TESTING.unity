@@ -2045,12 +2045,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186041312}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 408.2, y: 31.41, z: 226.53}
-  m_LocalScale: {x: 0.92045, y: 0.92045, z: 0.92045}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6529139, y: 3.124899, z: -6.6967525}
+  m_LocalScale: {x: 0.07328948, y: 0.0914567, z: 0.03553367}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1990203063}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &189356374
 PrefabInstance:
@@ -6202,6 +6202,72 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1728665940}
   m_SourcePrefab: {fileID: 100100000, guid: fbe9664112bdf3649a1848c56f13ffd0, type: 3}
+--- !u!1001 &615385190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6577420429815438248}
+    m_Modifications:
+    - target: {fileID: 261188207656718752, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3eedfea02eec22443a171ee325a2817f, type: 2}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 55.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 231.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6787991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.19807035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6787991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19807035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 32.534
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174887938143620562, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_Name
+      value: TorchPlacer_With_Skinny_Torch (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+--- !u!4 &615385191 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+  m_PrefabInstance: {fileID: 615385190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &626343348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17080,6 +17146,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1882061928368989805, guid: 9d815b9999bfa4e45a8639a6f090e6db, type: 3}
   m_PrefabInstance: {fileID: 1528908822}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1532558937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6577420429815438248}
+    m_Modifications:
+    - target: {fileID: 261188207656718752, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3eedfea02eec22443a171ee325a2817f, type: 2}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 59.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 231.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6787991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.19807035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6787991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19807035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 32.534
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174887938143620562, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+      propertyPath: m_Name
+      value: TorchPlacer_With_Skinny_Torch (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+--- !u!4 &1532558938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6964524183552736848, guid: 9a7eccb1c7a6aa94da8f1608eb7a3deb, type: 3}
+  m_PrefabInstance: {fileID: 1532558937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1542621494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1557309103502065680, guid: 51c650a1c96c7ba41a6cc9ae03523c20, type: 3}
@@ -21526,6 +21658,7 @@ Transform:
   - {fileID: 1424434698}
   - {fileID: 2012844328}
   - {fileID: 787498390}
+  - {fileID: 186041315}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1990203064
@@ -23722,6 +23855,12 @@ PrefabInstance:
       addedObject: {fileID: 934743019}
     - targetCorrespondingSourceObject: {fileID: 3370673738978605428, guid: 407c64b9bfabd3d49ac2f0bfd0ee21b4, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 615385191}
+    - targetCorrespondingSourceObject: {fileID: 3370673738978605428, guid: 407c64b9bfabd3d49ac2f0bfd0ee21b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1532558938}
+    - targetCorrespondingSourceObject: {fileID: 3370673738978605428, guid: 407c64b9bfabd3d49ac2f0bfd0ee21b4, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1511831250}
     - targetCorrespondingSourceObject: {fileID: 3370673738978605428, guid: 407c64b9bfabd3d49ac2f0bfd0ee21b4, type: 3}
       insertIndex: -1
@@ -23764,4 +23903,3 @@ SceneRoots:
   - {fileID: 212923577}
   - {fileID: 1075960154}
   - {fileID: 602470832}
-  - {fileID: 186041315}
