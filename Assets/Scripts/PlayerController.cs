@@ -71,20 +71,20 @@ public class PlayerController : MonoBehaviour
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
         timer += (Time.deltaTime);
-        if ((Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")) && timer > .5)
+        if ((Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")) && timer > .7)
         {
             Rando = Random.Range(0f, 2f);
             if (Rando < .75f)
             {
-                Source.PlayOneShot(step1);
+                Source.PlayOneShot(step1, .1f);
             }
             else if (Rando > .75f && Rando < 1.50f)
             {
-                Source.PlayOneShot(step2);
+                Source.PlayOneShot(step2, .1f);
             }
             else
             {
-                Source.PlayOneShot(step3);
+                Source.PlayOneShot(step3, .1f);
             }
             timer = 0f;
         }
