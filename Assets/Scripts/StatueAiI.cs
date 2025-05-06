@@ -14,6 +14,9 @@ public class StatueAiI : MonoBehaviour
 
     private Vector3 walkPoint;
     private bool walkPointSet;
+    private float timer = 0;
+    public AudioClip monSound;
+
 
     private void Awake()
     {
@@ -33,6 +36,14 @@ public class StatueAiI : MonoBehaviour
         else if (playerInSightRange && !playerInAttackRange)
         {
             ChasePlayer();
+        }
+
+        timer += (Time.deltaTime);
+        
+        if (timer >= .5)
+        {
+            AudioSource.PlayClipAtPoint(monSound, transform.position, 1f);
+            timer = 0;
         }
     }
 

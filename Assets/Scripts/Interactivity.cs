@@ -6,7 +6,7 @@ using UnityEngine;
 public class Interactivity : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
-    [SerializeField] float range = 100f;
+    [SerializeField] float range = 10f;
     public TMP_Text textMeshPro;
 
     void Update()

@@ -20,11 +20,12 @@ public class DoorMover : MonoBehaviour
 
     public bool lightactive = false;
     public bool coinactive = false;
+    public bool touchActive = false;
     public bool returns = false;
 
     public int lightcode = 9999;
     public int coincode = 999999999;
-    private int moved = 0;
+    private float moved = 0;
     public AudioClip doorSound;
 
 
@@ -50,7 +51,6 @@ public class DoorMover : MonoBehaviour
         if (lightactive == true && GlobalVarsSetup.torchCode == lightcode)
         {
             MoveDoor(door1, door1StartPos, door1Direction);
-            moved = 1;
         }
         if (coinactive == true && GlobalVarsSetup.coincount >= coincode)
         {
@@ -66,11 +66,24 @@ public class DoorMover : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (touchActive == true)
+        {
+            MoveDoor(door1, door1StartPos, door1Direction);
+        }
+    }
+
     private void MoveDoor(GameObject door, Vector3 startPos, Vector3 direction)
     {
         Vector3 targetPos = startPos + direction.normalized * moveDistance;
         door.transform.position = Vector3.MoveTowards(door.transform.position, targetPos, moveSpeed * Time.deltaTime);
-        AudioSource.PlayClipAtPoint(doorSound, door.transform.position, 2f);
+        moved += (Time.deltaTime);
+        if (moved <= 3)
+        {
+            AudioSource.PlayClipAtPoint(doorSound, door.transform.position, 2f);
+        }
+
     }
     private void MoveDoorBack(GameObject door, Vector3 startPos, Vector3 direction)
     {
